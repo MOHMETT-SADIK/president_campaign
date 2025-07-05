@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policy | President Mohamed’s National Revival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.7;
+    }
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: gold;
+    }
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .nav-links li a:hover {
+      color: gold;
+    }
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      nav {
+        position: relative;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #222;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 8px;
+        width: 200px;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+    .container {
+      max-width: 960px;
+      margin: 120px auto 60px;
+      padding: 0 20px;
+    }
+    h1, h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+    .lang-block {
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+    }
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .footer .social-links a:hover {
+      color: gold;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+      <span>SOOMAALIYA</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="speech.html">Speech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h1>The Rise of a Nation: Presidential Statement by Mohamed</h1>
+    <p><strong>A New Dawn for Somalia Begins Now.</strong></p>
+    <p>Somalia has endured decades of chaos, foreign interference, broken institutions, and wounded pride. But the age of disorder ends here. Under my leadership, a new force rises — built not on empty promises, but on discipline, centralized strength, and the will of the people.</p>
+    <p>I do not lead for power. I lead for restoration — of sovereignty, unity, confidence. A Somalia where borders are secure, the economy is stable, and citizens are proud to be Somali.</p>
+
+    <h2>A Commanded Vision for a Powerful Somalia</h2>
+    <p>My governance is rooted in centralized command — not scattered authority, but disciplined focus. Inspired by the courage of Mohamed Siad Barre and the boldness of Donald Trump, I envision a leadership that builds before crisis, acts before collapse.</p>
+
+    <h2>People-Driven, Order-Based Leadership</h2>
+    <p>The people are Somalia’s energy. My policies reflect your voice — gathered through public forums and citizen consultations. But unity requires structure. A nation must be led. A ship cannot sail if every hand tries to steer.</p>
+
+    <h2>Defense and Food Security as Sacred Duties</h2>
+    <p>No nation survives without defense. Our military — land, sea, and air — will be modern, Somali-built, and respected. Neutrality does not mean weakness. If Somalia is provoked, we will respond with power. Food sovereignty will also be sacred — no Somali shall starve in silence.</p>
+
+    <h2>Foreign Policy with Dignity</h2>
+    <p>We will partner with China, Turkey, Russia — not as dependents, but equals. No more puppet regimes. We will create policies of strength, not charity. Reforms will be real — Somali-driven, not donor-mandated.</p>
+
+    <h2>A Legacy of True Revival</h2>
+    <p>This is not a campaign — it’s a national rebirth. My legacy will be carved in infrastructure, independence, and security. Somalia will not be pitied. Somalia will be praised.</p>
+
+    <div class="lang-block">
+      <h1>Soo Kacitaan Qaran: Hadalka Madaxweynaha Maxamed</h1>
+      <p><strong>Waagu Wuu Dilaacay — Soomaaliya Wuu Iftinayaa.</strong></p>
+      <p>Soomaaliya waxay martay geeddi dheer oo qadhaadh — burbur, faragelin shisheeye, xukuumado daciif ah, iyo qarannimo dhaawacantay. Laakiin waayihii mugdiga wuu dhamaaday. Hogaamintaydu waxay astaan u tahay kacdoon dhab ah — mid ku dhisan nidaam, xoog dhexe, iyo rabitaanka shacabka.</p>
+      <p>Ma doonayo awood, waxaan doonayaa soo celin — madax-bannaani, midnimo, kalsooni. Soomaaliya leh xuduudo la ilaaliyo, dhaqaale xasiloon, iyo dad jecel inay Soomaali yihiin.</p>
+
+      <h2>Himilada Hoggaamin Xoog Leh</h2>
+      <p>Waxaan aaminsanahay in Soomaaliya u baahantahay hoggaan xooggan oo hal meel ka amar qaata. Waan diidanahay kala-firidhsanaanta. Waxaan ku daydaa geesinimadii Siyaad Barre iyo siyaasaddii adag ee Trump. Ma sugayo dhibaato — waxaan u dhisayaa kahor burbur.</p>
+
+      <h2>Shacab Awood Leh — Hoggaan Nidaamsan</h2>
+      <p>Shacabka waa xooggayga. Siyaasad kastaa waxay ka dhalatay codkiinna. Waxaan fursad siinaa shirka shacabka iyo la-tashiga. Laakiin sida doonta aysan u socon karin iyadoo dadkoo dhami wataan, dalkuna ma socon karo haddi aanan la hoggaamin.</p>
+
+      <h2>Difaaca Qaranka iyo Cunto Sugnaanta</h2>
+      <p>Difaacu ma ahan ikhtiyaar. Waa waajib qaran. Ciidankeenu wuxuu noqon doonaa mid casri ah, Somali ku dhisan, ciidan lagu ixtiraamo Afrika iyo caalamka. Nabadduna ma ahan tabar-darro. Haddii la ina weeraro — waan ka aar-gudan doonaa. Qof Soomaali ah oo gaajeysan — lama aqbalo.</p>
+
+      <h2>Siyaasad Dibadeed Oo Sharaf Ku Dhisan</h2>
+      <p>Waan la macaamili doonaa waddamada sida Shiinaha, Ruushka, iyo Turkiga — laakiin ma ahaan doono dal amaah raadinaya. Waxaan nahay Soomaali leh xorriyad iyo sharaftooda. Isbeddelka naga yimaada, maaha inoo laga qoro.</p>
+
+      <h2>Dhaxalka Dib-U-Dhiska Qaranka</h2>
+      <p>Taariikhdu ma xusi doonto hadalkeyga — waxay xusi doontaa waddooyin, askar, dugsiyo, xuduudo la ilaaliyo. Soomaaliya ma noqon doonto dal caawimaad dalbada. Waxa ay noqon doontaa dal caawimaad bixiya.</p>
+      <p>Kuwa maqla codkayga: ma tihidin dad la iloobay, la liiday, ama la kala qaybiyey. Tani waa dalkiinna. Waa waqtigiinna.</p>
+      <p><strong>Soomaaliya waa kacday — mana dhici doonto mar kale.</strong></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+    <a href="https://www.instagram.com/perfecto_presidente/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/mohamed.saadiq.351/"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/+254795551059"><i class="fab fa-whatsapp"></i></a>
+      <a href="tel:+252907084851"><i class="fas fa-phone"></i></a>
+    </div>
+    <p>&copy; 2025 President Mohamed | National Revival Campaign</p>
+  </footer>
+</body>
+</html>

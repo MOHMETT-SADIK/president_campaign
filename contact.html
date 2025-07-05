@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – President Mohamed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d5a64c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+      padding-top: 100px;
+    }
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: gold;
+    }
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .nav-links li a:hover {
+      color: gold;
+    }
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #222;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      .nav-links.active { display: flex; }
+      .hamburger { display: block; }
+    }
+    .contact-section {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact-section h1 {
+      font-size: 2.5rem;
+      color: gold;
+      margin-bottom: 20px;
+    }
+    .contact-section p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    .contact-icons {
+      font-size: 1.3rem;
+      margin-top: 30px;
+    }
+    .contact-icons a {
+      margin: 0 15px;
+      color: white;
+      transition: color 0.3s;
+    }
+    .contact-icons a:hover {
+      color: gold;
+    }
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+      <span>SOOMAALIYA</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="speech.html">Speech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact the Office of the President</h1>
+    <p>Email: <a href="mailto:president@somalia.gov.so" style="color:gold;">mohasadik98@gmail.com</a></p>
+    <p>Phone: <a href="tel:+252612345678" style="color:gold;">+252 90 7084851</a></p>
+    <p>Office Hours: Saturday – Thursday, 8:00 AM – 5:00 PM</p>
+    <div class="contact-icons">
+      <a href="https://www.instagram.com/perfecto_presidente/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/mohamed.saadiq.351/"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/+254795551059"><i class="fab fa-whatsapp"></i></a>
+      <a href="+252907084851"><i class="fas fa-phone"></i></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 President Mohamed | National Revival Campaign</p>
+  </footer>
+</body>
+</html>

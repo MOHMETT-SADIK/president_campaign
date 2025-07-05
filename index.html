@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>President Mohamed’s National Revival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: gold;
+    }
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .nav-links li a:hover {
+      color: gold;
+    }
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 120px 8vw 80px;
+      background: linear-gradient(to bottom right, #0c0c0c, #1c1c1c);
+      background-image: url(backrground.jpeg);
+      background-size: cover;
+    }
+    .hero-content {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: gold;
+    }
+    .hero-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 6px solid gold;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+      transition: transform 0.3s ease-in-out;
+    }
+    .hero-image:hover {
+      transform: scale(1.05);
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ccc;
+    }
+    .mission {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      background: gold;
+      color: black;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #ffd700;
+    }
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .footer .social-links a:hover {
+      color: gold;
+    }
+    @media (max-width: 991px) {
+      nav {
+        position: relative;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #222;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 8px;
+        width: 200px;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+    .long-content {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .long-content p {
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <span>SOOMAALIYA</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="speech.html">Speech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>President Mohamed’s National Revival</h1>
+      <img src="me.jpg" alt="President Mohamed" class="hero-image">
+      <p class="subtitle">Soo Kacitaanka Qaranka Madaxweyne Maxamed</p>
+      <p class="mission">
+        Uniting Somalia with strength, vision, and people-driven leadership to restore peace, prosperity, and pride.
+      </p>
+      <a href="vision.html" class="cta-button">Learn More</a>
+    </div>
+  </section>
+
+  <section class="long-content">
+    <h2 style="color: gold;">Presidential Message</h2>
+    <p>Somalia is at a historic turning point. Our journey to unity and strength begins now. This revival is led by the will of the people and powered by visionary leadership determined to reclaim Somalia’s dignity and destiny.</p>
+    <p>We prioritize national defense, food security, constitutional rule, economic development, and transparent governance. We learn from the resilience of our past and the strategies of powerful nations, while honoring our Somali values.</p>
+    <p>Our policies are forged with the input of the people. Citizens are encouraged to join forums, engage in debates, and take part in the reshaping of our national future.</p>
+    <p>Let us rise united, proud, and prepared to build a Somalia that listens, acts, and leads with wisdom and resolve. Under President Mohamed’s leadership, we shall rebuild the pillars of our state and strengthen the heart of our homeland.</p>
+    <p>From every region and every voice, let the revival echo with pride, with discipline, and with purpose.</p>
+    <p>This is not only a revival—it is a declaration: Somalia shall rise again.</p>
+  </section>
+
+  <section class="long-content">
+    <h2 style="color: gold;">Fariinta Madaxweynenimo</h2>
+    <p>Soomaaliya waxay taagan tahay meel taariikhi ah oo kala guur ah—waana billowga socdaalkeeda ku wajahan midnimo iyo xoog. Soo-kabashadan waxay ka dhalatay doonista shacabka, waxaana hoggaaminaya aragti fog iyo hoggaan daacad ah oo ka go’an in uu dib u soo celiyo sharafta iyo masiirka Soomaaliyeed.</p>
+    <p>Waxaan mudnaanta siinaynaa difaaca qaranka, sugidda amniga cunnada, ilaalinta dastuurka, horumarinta dhaqaalaha, iyo daahfurnaan ku salaysan xukunka toosan. Waxaan wax ka baranay adkaysigii waayaha ina soo maray iyo xeeladaha dawladaha xoogga leh, annagoo weliba dhowrayna qiimaha iyo anshaxa Soomaaliyeed.</p>
+    <p>Hannaankeena siyaasadeed wuxuu salka ku hayaa codka shacabka. Muwaadiniinta waxaa lagu dhiirrigelinayaa inay ka qayb qaataan goleyaasha talo wadaagga, doodo furan, iyo dib-u-habaynta mustaqbalka dalkeenna.</p>
+    <p>Aan u kaco sidii ummad mideysan, garab is haysta, kuna faanaysa astaanta qaranimo—dal dhageysta, falceliya, kuna hoggaansan xikmad iyo xisaabtan. Hoggaanka Madaxweyne Maxamed wuxuu horseedi doonaa dib-u-dhiska tiirarka dawladnimadeenna iyo xoojinta wadnaha ummadeenna.</p>
+    <p>Laga bilaabo gobol walba iyo cod walba, ha dhexmarto qaylada soo-kabashada—mid ku salaysan sharaf, dulqaad, iyo ujeeddo weyn.</p>
+    <p>Tani ma ahan kaliya kicid—waa ballanqaad qaran: Soomaaliya way soo noqonaysaa, oo si sharaf leh bay u kacaysaa!</p>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+       <a href="https://www.instagram.com/perfecto_presidente/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/mohamed.saadiq.351/"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/+254795551059"><i class="fab fa-whatsapp"></i></a>
+      <a href="tel:+252907084851"><i class="fas fa-phone"></i></a>
+    </div>
+    <p>&copy; 2025 President Mohamed | National Revival Campaign</p>
+  </footer>
+</body>
+</html>

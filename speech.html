@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speech | President Mohamed’s Inauguration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.8;
+    }
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: gold;
+    }
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .nav-links li a:hover {
+      color: gold;
+    }
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      nav {
+        position: relative;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #222;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 8px;
+        width: 200px;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+    .container {
+      max-width: 980px;
+      margin: 120px auto 60px;
+      padding: 0 20px;
+    }
+    h1, h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+    .section-separator {
+      margin: 30px 0;
+      text-align: center;
+      font-size: 2rem;
+      color: gold;
+    }
+    .lang-block {
+      margin-top: 80px;
+      padding-top: 40px;
+      border-top: 1px solid #444;
+    }
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .footer .social-links a:hover {
+      color: gold;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+      <span>SOOMAALIYA</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="speech.html">Speech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h1>🗣 Presidential Inaugural Speech – English Version</h1>
+    <p><strong>By His Excellency, President Mohamed</strong></p>
+    <p class="section-separator">⸻</p>
+    <p>My fellow Somali citizens, brothers and sisters across every region of our beloved nation, and to the people watching around the world — today, a new era begins.</p>
+    <p>We have suffered long enough. We have lived through decades of corruption, division, and foreign manipulation. But the time for weakness is over. The time for silence is over. The Somali people are rising again.</p>
+    <p>I do not stand here today to entertain you with fancy speeches or to give you false hope. I stand here as a man who has heard your cries, seen your struggles, and understands your pain. I stand here as a leader born from the people, not appointed by elites or guided by foreign masters.</p>
+    <p>From today onward, we reclaim our honor. We take back our destiny. And we begin a national revival like never before.</p>
+
+    <p class="section-separator">⸻</p>
+    <h2>🇸🇴 Our Somalia, Our Duty</h2>
+    <p>Somalia is not just a country. Somalia is an identity, a pride, and a responsibility. We are a nation with ancient history, deep culture, and limitless potential — but we have been lied to, divided, and weakened.</p>
+    <p>The enemies of our nation are not just outsiders — they are the corruption within, the selfish politics, and the betrayal by those who sold Somalia’s future for their own power.</p>
+    <p>I was not elected to be polite. I was chosen to fix this nation — and I will.</p>
+    <p>We will rebuild our military. We will secure our borders. We will feed our people. We will restore law, dignity, and order.</p>
+
+    <p class="section-separator">⸻</p>
+    <h2>🛡 A Government With Spine and Spirit</h2>
+    <p>My government will not ask permission to defend the country. We will not wait for others to solve our problems. We will command, plan, and act — boldly and unapologetically.</p>
+    <p>But we will not rule with fear. We will rule with purpose. And our purpose is clear: To unite Somalia, protect its people, and guarantee that no future generation lives in the darkness we survived.</p>
+
+    <p class="section-separator">⸻</p>
+    <h2>🌍 To the World: Somalia is Not for Sale</h2>
+    <p>To the world powers watching us — respect us, and we will respect you. Partner with us, and we will partner back. But if you come to control us, divide us, or dictate us — know this: The new Somalia will not bow.</p>
+    <p>Somalia is not a pawn. We are not a battlefield for others’ wars. We are a sovereign nation — and I will protect that sovereignty with everything I have.</p>
+
+    <p class="section-separator">⸻</p>
+    <h2>🤝 To the Somali People: This is Your Government</h2>
+    <p>I will not lead behind closed doors. I will meet you in towns, villages, and forums. I will make your voice the foundation of our policy. You are no longer distant from power — you are now part of it.</p>
+    <p>I may sit in the presidential chair, but this presidency belongs to the people.</p>
+
+    <p class="section-separator">⸻</p>
+    <h2>🔥 History Is Watching — Let’s Make It Proud</h2>
+    <p>We are not just changing a government — we are rewriting Somalia’s story. No longer a story of failure. No longer a story of fear. But a story of strength, unity, and rebirth.</p>
+    <p>Let our children grow up not as victims, but as visionaries. Let the world see Somalia not as a broken nation, but as a rising force. And let this day be remembered as the moment we took back our country.</p>
+    <p>May Allah guide us. May the people stay strong. And may Somalia live forever. Long live Somalia. Long live the people. Long live the truth.</p>
+
+    <div class="lang-block">
+      <h1>🗣 Khudbaddii Madaxweynaha – Somali Version</h1>
+      <p><strong>Waxaa jeedinaya: Madaxweyne Maxamed</strong></p>
+      <p class="section-separator">⸻</p>
+      <p>Muwaadiniinta Soomaaliyeed, walaalaha ka kala jooga dhamaan gobollada dalkayga qaaliga ah, iyo dhamaan shacabka daawanaya aduunka oo dhan — maanta waa bilow cusub.</p>
+      <p>Waan ku filnaannay dulmiga. Waan ku filnaannay musuqmaasuqa, kala qaybsanaanta, iyo gacmo shisheeye. Laakiin waqtigii tabar-darrida waa dhamaaday. Waqtigii aamusanida waa dhamaaday. Dadka Soomaaliyeed waa ay kacayaan mar kale.</p>
+      <p>Ma joogo halkan maanta inaan hadal qurux badan idin siiyo ama rajo been ah. Waxaan halkan u taaganahay sidii nin maqla qayladaada, arka dhibkaaga, oo fahmaya xanuunkaaga. Waxaan ahay hoggaamiye ka dhashay dadkiisa — ma ahan mid la magacaabay ama la hagayo oo kaliya.</p>
+      <p>Laga bilaabo maanta, sharafteena waan soo ceshanaynaa. Qaddarinteena waan dhiseynaa. Waxaan bilaabaynaa kacaankii ugu weynaa ee qaranimada Soomaaliyeed.</p>
+
+      <p class="section-separator">⸻</p>
+      <h2>🇸🇴 Soomaali Waa Wajigeenna — Waa Waajibkeena</h2>
+      <p>Soomaaliya kaliya ma ahan dal — waa aqoonsi, sharaf, iyo masuuliyad. Waxaan nahay dad leh taariikh dheer, dhaqan facweyn, iyo awood aan la xadidi karin — balse waxaa nalagu beensheegay, nala kala qaybin, lana daciifiyey.</p>
+      <p>Cadowga Soomaaliya ma ahan shisheeye oo kaliya — waa musuqmaasuqa gudaha, siyaasiyiinta hunguriga leh, iyo kuwa gaday mustaqbalka ummadda si ay awood u helaan.</p>
+      <p>Anigu uma iman inaan qoslo. Waxaan u imid inaan hagaajiyo. Waxaan ballan qaadayaa inaan:</p>
+      <ul style="margin: 10px 0 20px 20px; color: #ccc;">
+        <li>• Ciidanka dib u dhisi doono.</li>
+        <li>• Xuduudaha sugi doono.</li>
+        <li>• Dadka quudin doono.</li>
+        <li>• Xeer iyo sharaf dib u soo celin doono.</li>
+      </ul>
+
+      <p class="section-separator">⸻</p>
+      <h2>🛡 Xukuumad Leh Xoog Iyo Xeelad</h2>
+      <p>Dowladdeydu oggolaansho uma sugayso difaaca dalka. Waa dowlad qorshe leh, ficil leh, oo han leh. Laakiin cabsigelin kuma taliyayno — ujeedo ayaan ku taliyaynaa.</p>
+      <p>Ujeedadeennu waa mid cad: Inaan mideyno Soomaaliya, dadkeeda ilaalino, una xaqiijino mustaqbal ammaan ah.</p>
+
+      <p class="section-separator">⸻</p>
+      <h2>🌍 Dunida Waxaan Leeyahay: Soomaaliya Iib Ma Aha</h2>
+      <p>Kuwa awoodda leh ee naga daawanaya — ixtiraama Soomaaliya, anagana waan idin ixtiraami doonaa. La shaqeeya annaga, annagana waan idin la shaqeyn doonaa. Laakiin hadii aad timaadaan inaad nagu xukuntaan, na kala qaybiso, ama nagu amar ku taagtaan — ogaada: Soomaaliya cusub waa mid madax bannaan.</p>
+      <p>Soomaaliya ma ahan la hayste. Ma ahan meel lagu tijaabiyo dagaalada shisheeye. Waa qaran madax bannaan, aniguna waxaan u dhiman doonaa difaaceeda.</p>
+
+      <p class="section-separator">⸻</p>
+      <h2>🤝 Dadka Soomaaliyeed: Dowladdaan Waa Idin Tahay</h2>
+      <p>Ma aha inaan ka taliyo albaabada daboolan. Waxaan idinla kulmi doonaa magaalooyinka, tuulooyinka, iyo madal kasta. Codkiina wuxuu noqon doonaa aasaaska siyaasaddeenna. Ma tihidin dad laga fogaado — waxaad hadda tihiin qolka go’aamada.</p>
+      <p>Anigu kursiga Madaxweyne waan fadhin karaa — laakiin madaxweynanimada waxaa iska leh shacabka Soomaaliyeed.</p>
+
+      <p class="section-separator">⸻</p>
+      <h2>🔥 Taariikhdu Way Nala Eegaysaa — Aan Sharaf Ku Galno</h2>
+      <p>Ma bedelayno kaliya xukuumad — waxaan dib u qoraynaa sheekada Soomaaliya. Ma ahaan doonto sheeko guuldarro ah. Ma ahaan doonto sheeko cabsi ah. Waxaa noqoneysa sheeko xoojin, midnimo, iyo dib u dhalasho.</p>
+      <p>Aan carruurteena korino iyagoo aan cabsan, balse leh rajo iyo aragti. Aan caalamka tusno in Soomaaliya ay taagan tahay — awood leh, aan la joojin karin. Ha la xasuusto maanta: waa maalintii aan la wareegnay masiirka dalkeena.</p>
+      <p>Ilaahay ha inaga garab galo. Dadka ha adkeysto. Soomaaliya ha noolaato. Soomaaliya ha noolaato. Dadka ha noolaadaan. Xaqa ha guuleysto.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+        <a href="https://www.instagram.com/perfecto_presidente/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/mohamed.saadiq.351/"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/+254795551059"><i class="fab fa-whatsapp"></i></a>
+      <a href="tel:+252907084851"><i class="fas fa-phone"></i></a>
+    </div>
+    <p>&copy; 2025 President Mohamed | National Revival Campaign</p>
+  </footer>
+</body>
+</html>
